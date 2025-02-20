@@ -1,0 +1,83 @@
+/* styles.css - Custom Styles for Data Sweeper Pro | Created by Hammad Janjua */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+body {
+    background-color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.main {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.upload-section {
+    padding: 20px;
+    border: 2px dashed #4A90E2;
+    border-radius: 12px;
+    background-color: #f4f6f8;
+}
+
+.stButton button, .stDownloadButton button {
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: #4A90E2;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.stButton button:hover, .stDownloadButton button:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+.header-container {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: float 3s infinite ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.data-preview-container {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f4f7f9;
+    border-radius: 8px;
+    border-left: 4px solid #4A90E2;
+}
+
+.success-message {
+    color: #2ECC71;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #E74C3C;
+    font-weight: bold;
+}
+
+.download-section {
+    margin-top: 15px;
+}
